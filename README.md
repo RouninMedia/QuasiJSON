@@ -50,3 +50,17 @@ _______
 	¨eta¨： 1639069696
 ｝
 ```
+_______
+
+## PHP Functions
+
+### `Convert_JSON_To_QuasiJSON()`
+
+### `Convert_QuasiJSON_To_JSON()`
+________
+
+## Javascript Functions
+
+### `convertJSONToQuasiJSON()`
+
+### `convertQuasiJSONToJSON()`
