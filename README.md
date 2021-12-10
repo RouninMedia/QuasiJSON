@@ -77,12 +77,12 @@ function Convert_JSON_To_QuasiJSON($myJSON) {
 function Convert_QuasiJSON_To_JSON($myQuasiJSON) {
 
   $myJSON = $myQuasiJSON;
-  $myJSON = str_replace('{', '｛', $myJSON);
-  $myJSON = str_replace('}', '｝', $myJSON);
-  $myJSON = str_replace('[', '［', $myJSON);
-  $myJSON = str_replace(']', '］', $myJSON);
-  $myJSON = str_replace('"', '¨', $myJSON);
-  $myJSON = str_replace(':', '：', $myJSON);
+  $myJSON = str_replace('｛', '{', $myJSON);
+  $myJSON = str_replace('｝', '}', $myJSON);
+  $myJSON = str_replace('［', '[', $myJSON);
+  $myJSON = str_replace('］', ']', $myJSON);
+  $myJSON = str_replace('¨', '"', $myJSON);
+  $myJSON = str_replace('：', ':', $myJSON);
 
   return $myJSON;
 }
@@ -117,12 +117,12 @@ const convertQuasiJSONToJSON = (myQuasiJSON) => {
 
   let myJSON = myQuasiJSON;
   
-  myJSON = myJSON.replaceAll('{', '｛');
-  myJSON = myJSON.replaceAll('}', '｝');
-  myJSON = myJSON.replaceAll('[', '［');
-  myJSON = myJSON.replaceAll(']', '］');
-  myJSON = myJSON.replaceAll('"', '¨');
-  myJSON = myJSON.replaceAll(':', '：');
+  myJSON = myJSON.replaceAll('｛', '{',);
+  myJSON = myJSON.replaceAll( '｝', '}');
+  myJSON = myJSON.replaceAll('［', '[');
+  myJSON = myJSON.replaceAll('］', ']');
+  myJSON = myJSON.replaceAll('¨', '"');
+  myJSON = myJSON.replaceAll('：', ':');
 
   return myJSON;
 }
