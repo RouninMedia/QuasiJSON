@@ -9,6 +9,20 @@ Consequently, **QuasiJSON** remains a `string` when parsed by:
  - `JSON.parse()` in **javascript** etc.
 _______
 
+## Substitution table
+
+Only six characters are replaced to transform **JSON** into **QuasiJSON**:
+
+ - `{` becomes `｛` (Name: ** | Unicode: `` | HTML: ``)
+ - `}` becomes `｝` (Name: ** | Unicode: `` | HTML: ``)
+ - `[` becomes `［` (Name: ** | Unicode: `` | HTML: ``)
+ - `]` becomes `］` (Name: ** | Unicode: `` | HTML: ``)
+ - `"` becomes `¨` (Name: *diaeresis* | Unicode: `U+00A8` | HTML: `&#168;`)
+ - `:` becomes `：` (Name: ** | Unicode: `` | HTML: ``)
+
+
+_______
+
 ## Side-by-side comparison of JSON and QuasiJSON
 
 ### Example of JSON
