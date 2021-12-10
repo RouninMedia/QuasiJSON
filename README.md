@@ -56,11 +56,56 @@ _______
 
 ### `Convert_JSON_To_QuasiJSON()`
 
+```
+function Convert_JSON_To_QuasiJSON($myJSON) {
+
+  $myQuasiJSON = $myJSON;
+  $myQuasiJSON = str_replace('{', '｛', $myQuasiJSON);
+  $myQuasiJSON = str_replace('}', '｝', $myQuasiJSON);
+  $myQuasiJSON = str_replace('[', '［', $myQuasiJSON);
+  $myQuasiJSON = str_replace(']', '］', $myQuasiJSON);
+  $myQuasiJSON = str_replace('"', '¨', $myQuasiJSON);
+  $myQuasiJSON = str_replace(':', '：', $myQuasiJSON);
+
+  return $myQuasiJSON;
+}
+```
+
 ### `Convert_QuasiJSON_To_JSON()`
+
+```
+function Convert_QuasiJSON_To_JSON($myQuasiJSON) {
+
+  $myJSON = $myQuasiJSON;
+  $myJSON = str_replace('{', '｛', $myJSON);
+  $myJSON = str_replace('}', '｝', $myJSON);
+  $myJSON = str_replace('[', '［', $myJSON);
+  $myJSON = str_replace(']', '］', $myJSON);
+  $myJSON = str_replace('"', '¨', $myJSON);
+  $myJSON = str_replace(':', '：', $myJSON);
+
+  return $myJSON;
+}
+```
 ________
 
 ## Javascript Functions
 
 ### `convertJSONToQuasiJSON()`
 
+```
+const convertJSONToQuasiJSON = (myJSON) => {
+
+  return quasiJSON;
+}
+```
+
 ### `convertQuasiJSONToJSON()`
+
+
+```
+const convertQuasiJSONToJSON = (myQuasiJSON) => {
+
+  return myJSON;
+}
+```
