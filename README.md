@@ -13,12 +13,12 @@ _______
 
 Only six characters are replaced to transform **JSON** into **QuasiJSON**:
 
- - `{` becomes `｛` (Name: ** | Unicode: `` | HTML: ``)
- - `}` becomes `｝` (Name: ** | Unicode: `` | HTML: ``)
- - `[` becomes `［` (Name: ** | Unicode: `` | HTML: ``)
- - `]` becomes `］` (Name: ** | Unicode: `` | HTML: ``)
- - `"` becomes `¨` (Name: *diaeresis* | Unicode: `U+00A8` | HTML: `&#168;`)
- - `:` becomes `：` (Name: ** | Unicode: `` | HTML: ``)
+ - `{` becomes `｛` (Name: *Fullwidth Left Curly Bracket* | Unicode: `U+FF5B` | HTML: `&#65371;`)
+ - `}` becomes `｝` (Name: *Fullwidth Right Curly Bracke* | Unicode: `U+FF5D` | HTML: `&#65373;`)
+ - `[` becomes `［` (Name: *Fullwidth Left Square Bracket* | Unicode: `U+FF3B` | HTML: `&#65339;`)
+ - `]` becomes `］` (Name: *Fullwidth Right Square Bracket* | Unicode: `U+FF3D` | HTML: `&#65341;`)
+ - `"` becomes `¨` (Name: *Diaeresis* | Unicode: `U+00A8` | HTML: `&#168;`)
+ - `:` becomes `：` (Name: *Small Colon* | Unicode: `U+FE55` | HTML: `&#65109;`)
 
 
 _______
