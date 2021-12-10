@@ -3,7 +3,7 @@
 
 **QuasiJSON** replaces all the significant characters in JSON with *Unicode lookalikes*.
 
-Consequently, **QuasiJSON** remains a `string` when parsed by:
+Consequently, **QuasiJSON** *remains a `string`* when parsed by:
 
  - `json_encode()` in **PHP**
  - `JSON.parse()` in **javascript** etc.
@@ -96,6 +96,15 @@ ________
 ```
 const convertJSONToQuasiJSON = (myJSON) => {
 
+  let quasiJSON = myJSON;
+  
+  quasiJSON = quasiJSON.replaceAll('{', '｛');
+  quasiJSON = quasiJSON.replaceAll('}', '｝');
+  quasiJSON = quasiJSON.replaceAll('[', '［');
+  quasiJSON = quasiJSON.replaceAll(']', '］');
+  quasiJSON = quasiJSON.replaceAll('"', '¨');
+  quasiJSON = quasiJSON.replaceAll(':', '：');
+  
   return quasiJSON;
 }
 ```
@@ -105,6 +114,15 @@ const convertJSONToQuasiJSON = (myJSON) => {
 
 ```
 const convertQuasiJSONToJSON = (myQuasiJSON) => {
+
+  let myJSON = myQuasiJSON;
+  
+  myJSON = myJSON.replaceAll('{', '｛');
+  myJSON = myJSON.replaceAll('}', '｝');
+  myJSON = myJSON.replaceAll('[', '［');
+  myJSON = myJSON.replaceAll(']', '］');
+  myJSON = myJSON.replaceAll('"', '¨');
+  myJSON = myJSON.replaceAll(':', '：');
 
   return myJSON;
 }
