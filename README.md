@@ -1,5 +1,5 @@
 # QuasiJSON
-**QuasiJSON** is an *escape* for JSON.
+**QuasiJSON** is a human-readable *escape* for JSON.
 
 **QuasiJSON** replaces all the significant characters in JSON with *Unicode lookalikes*.
 
